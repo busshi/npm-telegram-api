@@ -1,3 +1,5 @@
+![publish](https://github.com/busshi/linkedin_bot_api/actions/workflows/publish.yml/badge.svg)
+
 # npm-telegram-api
 
 Node package for the Telegram API
@@ -14,10 +16,9 @@ Node package for the Telegram API
 ## Example
 
 ```js
-const Telegram = require('@busshi/telegram-api')
+import Telegram from '@busshi/telegram-api'
 
 const telegram = new Telegram(YOUR_BOT_TOKEN');
 
 telegram.sendMessage(YOUR_CHAT_ID, "Hello world!")
 ```
-

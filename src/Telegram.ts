@@ -1,15 +1,17 @@
-const axios = require('axios');
+import axios from 'axios';
 
 class Telegram {
+  telegramUrl: string;
+  apiUrl: string;
 
-  constructor(token) {
-    this.telegramUrl = "https://api.telegram.org/";
+  constructor(token: string) {
+    this.telegramUrl = 'https://api.telegram.org/';
     this.apiUrl = `${this.telegramUrl}bot${token}`;
   }
 
   sendMessage = async (
-    dest,
-    message,
+    dest: string,
+    message: string,
     disableNotification = true
   ) => {
     await axios.post(
@@ -19,13 +21,13 @@ class Telegram {
         text: message,
         disable_notification: disableNotification,
       },
-      { headers: { "Content-Type": "application/json" } }
+      { headers: { 'Content-Type': 'application/json' } }
     );
   };
 
   sendPhoto = async (
-    dest,
-    picUrl,
+    dest: string,
+    picUrl: string,
     disableNotification = true
   ) => {
     await axios.post(
@@ -35,9 +37,9 @@ class Telegram {
         photo: picUrl,
         disable_notification: disableNotification,
       },
-      { headers: { "Content-Type": "application/json" } }
+      { headers: { 'Content-Type': 'application/json' } }
     );
   };
 }
 
-module.exports = Telegram;
+export default Telegram;

@@ -1,11 +1,24 @@
 {
   "name": "@busshi/telegram-api",
-  "version": "1.0.3",
-  "description": "Basic Telegram API to interact with a bot",
-  "main": "Telegram.ts",
+  "version": "2.0.0",
+  "description": "Basic Telegram API to interact with your bot",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
-    "prebuild": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
   },
   "repository": {
     "type": "git",
@@ -17,15 +30,43 @@
     "bot"
   ],
   "author": "busshi",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/busshi/npm-telegram-api/issues"
   },
   "homepage": "https://github.com/busshi/npm-telegram-api#readme",
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "module": "dist/telegram-api.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/telegram-api.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/telegram-api.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "dependencies": {
     "axios": "^1.2.0"
   },
   "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.1.0",
+    "husky": "^8.0.2",
+    "size-limit": "^8.1.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.1",
     "typescript": "^4.9.3"
   }
 }
