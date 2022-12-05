@@ -15,10 +15,13 @@ jobs:
           node-version: 16
       - run: yarn install
       - run: yarn build
-      - run: npm set registry https://www.npmjs.com/package/@busshi/telegram-api
-      - run: npm set https://www.npmjs.com/package/@busshi/telegram-api:_authToken ${{ secrets.NPM_TOKEN }}
-      - run: npm publish --access public
-  # publish:
+
+      - name: Publish to NPM
+        uses: ./
+        with:
+          token:
+            ${{ secrets.NPM_TOKEN }}
+            # publish:
   #   name: Publish package on NPM
   #   runs-on: ubuntu-latest
   #   steps:
