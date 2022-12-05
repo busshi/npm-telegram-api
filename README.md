@@ -1,4 +1,4 @@
-![publish](https://github.com/busshi/linkedin_bot_api/actions/workflows/publish.yml/badge.svg)
+![publish](https://github.com/busshi/npm-telegram-api/actions/workflows/publish.yml/badge.svg)
 
 # npm-telegram-api
 
