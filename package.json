@@ -1,5 +1,5 @@
 {
-  "name": "@busshi/npm-telegram-api",
+  "name": "@busshi/telegram-api",
   "version": "1.0.1",
   "description": "Basic Telegram API to interact with a bot",
   "main": "Telegram.ts",
@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/busshi/npm-telegram-api#readme",
   "dependencies": {
-    "@types/node": "^18.11.10",
     "axios": "^1.2.0"
   },
   "devDependencies": {
