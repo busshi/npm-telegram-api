@@ -27,7 +27,7 @@ jobs:
           cmd: build # will run `yarn build` command
 
   publish:
-    name: Publish build package on NPM
+    name: Publish package on NPM
 
     runs-on: ubuntu-latest
 
@@ -36,6 +36,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+      - run: yarn install
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
