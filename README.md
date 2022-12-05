@@ -21,4 +21,3 @@ const telegram = new Telegram(YOUR_BOT_TOKEN');
 telegram.sendMessage(YOUR_CHAT_ID, "Hello world!")
 ```
 
-[Github repository](https://github.com/busshi/npm-telegram-api)
