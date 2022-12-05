@@ -13,8 +13,9 @@ Node package for the Telegram API
 
 ## Example
 
+javascript
 ```
-cconst Telegram = require('@busshi/telegram-api')
+const Telegram = require('@busshi/telegram-api')
 
 const telegram = new Telegram(YOUR_BOT_TOKEN');
 
