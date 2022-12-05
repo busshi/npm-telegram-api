@@ -21,4 +21,6 @@ import Telegram from '@busshi/telegram-api'
 const telegram = new Telegram(YOUR_BOT_TOKEN');
 
 telegram.sendMessage(YOUR_CHAT_ID, "Hello world!")
+
+telegram.sendPhoto(YOUR_CHAT_ID, PICTURE_URL)
 ```
