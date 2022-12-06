@@ -18,7 +18,9 @@ jobs:
 
       - run: yarn build
 
-      - run: NPM_TOKEN=${{ secrets.NPM_TOKEN }} npm publish --access public
+      - run: npm publish --access public
+      - env:
+          - NPM_TOKEN=${{ secrets.NPM_SECRET }}
       # - uses: JS-DevTools/npm-publish@v1
       #   with:
       #     token: ${{ secrets.NPM_TOKEN }}
