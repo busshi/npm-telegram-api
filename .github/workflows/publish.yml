@@ -18,8 +18,9 @@ jobs:
 
       - run: yarn build
 
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          access: 'public'
-          tag: 'latest'
+      - run: npm publish --access public --token ${{ secrets.NPM_TOKEN }}
+      # - uses: JS-DevTools/npm-publish@v1
+      #   with:
+      #     token: ${{ secrets.NPM_TOKEN }}
+      #     access: 'public'
+      #     tag: 'latest'
