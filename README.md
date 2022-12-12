@@ -4,7 +4,7 @@
 
 Node package for the Telegram API
 
-## Usage
+## Installation
 
 `yarn add @busshi/telegram-api`
 or 
@@ -24,7 +24,7 @@ or
 | sendSticker | <ul><li>chatId: string</li><li>stickerId: string</li></ul> |
 | sendDice | <ul><li>chatId: string (get a random number from 1 to 6)</li></ul> |
 
-## Example
+## Usage
 
 ```js
 import Telegram from '@busshi/telegram-api';
