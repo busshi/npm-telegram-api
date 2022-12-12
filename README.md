@@ -7,12 +7,16 @@ Node package for the Telegram API
 ## Usage
 
 `yarn add @busshi/telegram-api`
+or 
+`npm install @busshi/telegram-api`
 
 ## Functionnalities
 
 | Method | Parameters |
 | :-- | :-- |
-| sendMessage | chatId: string, message: string, disableNotification: boolean (default: false) |
+| sendMessage | - chatId: string, 
+- message: string,
+- disableNotification: boolean (default: false) |
 | editMessage | chatId: string, messageId: string, text: string |
 | deleteMessage | chatId: string, messageId: string |
 | sendPhoto | chatId: string, picUrl: string, disableNotification: boolean (default: false) |
