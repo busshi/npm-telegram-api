@@ -14,15 +14,15 @@ or
 
 | Method | Parameters |
 | :-- | :-- |
-| sendMessage | <ul><li>chatId: string</li><li>message: string</li><li>disableNotification: boolean (default: false)</li></ul> |
-| editMessage | chatId: string, messageId: string, text: string |
-| deleteMessage | chatId: string, messageId: string |
-| sendPhoto | chatId: string, picUrl: string, disableNotification: boolean (default: false) |
-| sendDocument | chatId: string, fileUrl: string, disableNotification: boolean (default: false) |
-| sendVideoNote | chatId: string, videoUrl: string, disableNotification: boolean (default: false) |
-| sendPoll | chatId: string, question: string, options: string[], disableNotification: boolen (default: false), isAnonymous: boolean (default: false) |
-| sendSticker | chatId: string, stickerId: string (for example CAACAgIAAxkBAAI6GV6vP_F6BaWapEmBZ2k8e8yBi2xMAAICAwACusCVBTRFBuRNlNodGQQ) |
-| sendDice | chatId: string (get a random number from 1 to 6) |
+| sendMessage | <ul><li>chatId: string</li><li>text: string</li><li>disableNotification: boolean (default: false)</li></ul> |
+| editMessage | <ul><li>chatId: string</li><li>messageId: string</li><li>text: string</li></ul> |
+| deleteMessage | <ul><li>chatId: string</li><li>messageId: string</li></ul> |
+| sendPhoto | <ul><li>chatId: string</li><li>picUrl: string</li><li>disableNotification: boolean (default: false)</li></ul> |
+| sendDocument | <ul><li>chatId: string</li><li>fileUrl: string</li><li>disableNotification: boolean (default: false)</li></ul> |
+| sendVideoNote | <ul><li>chatId: string</li><li>videoUrl: string</li><li>disableNotification: boolean (default: false)</li></ul> |
+| sendPoll | <ul><li>chatId: string</li><li>question: string</li><li>options: string[]</li><li>disableNotification: boolen (default: false)</li><li>isAnonymous: boolean (default: false)</li></ul> |
+| sendSticker | <ul><li>chatId: string</li><li>stickerId: string (for example CAACAgIAAxkBAAI6GV6vP_F6BaWapEmBZ2k8e8yBi2xMAAICAwACusCVBTRFBuRNlNodGQQ)</li></ul> |
+| sendDice | <ul><li>chatId: string (get a random number from 1 to 6)</li></ul> |
 
 ## Example
 
