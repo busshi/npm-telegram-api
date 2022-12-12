@@ -10,15 +10,17 @@ Node package for the Telegram API
 
 ## Functionnalities
 
-- sendMessage with/without notification
-- editMessage
-- deleteMessage
-- sendPhoto (with a picture URL)
-- sendDocument (with a document URL)
-- sendVideoNote (with a video URL)
-- sendPoll (question, array of answers)
-- sendSticker (sticker_id needed, for example CAACAgIAAxkBAAI6GV6vP_F6BaWapEmBZ2k8e8yBi2xMAAICAwACusCVBTRFBuRNlNodGQQ)
-- sendDice (random number from 1 to 6)
+| Method | Parameters |
+| *-- | *-- |
+| sendMessage | chatId: string, message: string, disableNotification: boolean (default: false) |
+| editMessage | chatId: string, messageId: string, text: string |
+| deleteMessage | chatId: string, messageId: string |
+| sendPhoto | chatId: string, picUrl: string, disableNotification: boolean (default: false) |
+| sendDocument | chatId: string, fileUrl: string, disableNotification: boolean (default: false) |
+| sendVideoNote | chatId: string, videoUrl: string, disableNotification: boolean (default: false) |
+| sendPoll | chatId: string, question: string, options: string[], disableNotification: boolen (default: false), isAnonymous: boolean (default: false) |
+| sendSticker | chatId: string, stickerId: string (for example CAACAgIAAxkBAAI6GV6vP_F6BaWapEmBZ2k8e8yBi2xMAAICAwACusCVBTRFBuRNlNodGQQ) |
+| sendDice | chatId: string (get a random number from 1 to 6) |
 
 ## Example
 
