@@ -11,7 +11,7 @@ Node package for the Telegram API
 ## Functionnalities
 
 | Method | Parameters |
-| *-- | *-- |
+| :-- | :-- |
 | sendMessage | chatId: string, message: string, disableNotification: boolean (default: false) |
 | editMessage | chatId: string, messageId: string, text: string |
 | deleteMessage | chatId: string, messageId: string |
