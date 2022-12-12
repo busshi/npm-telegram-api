@@ -20,7 +20,7 @@ or
 | sendPhoto | <ul><li>chatId: string</li><li>picUrl: string</li><li>disableNotification: boolean (optional, default: false)</li></ul> |
 | sendDocument | <ul><li>chatId: string</li><li>fileUrl: string</li><li>disableNotification: boolean (optional, default: false)</li></ul> |
 | sendVideoNote | <ul><li>chatId: string</li><li>videoUrl: string</li><li>disableNotification: boolean (optional, default: false)</li></ul> |
-| sendPoll | <ul><li>chatId: string</li><li>question: string</li><li>options: string[]</li><li>disableNotification: boolen (optional, default: false)</li><li>isAnonymous: boolean (optional, default: false)</li></ul> |
+| sendPoll | <ul><li>chatId: string</li><li>question: string</li><li>options: string[]</li><li>disableNotification: boolean (optional, default: false)</li><li>isAnonymous: boolean (optional, default: false)</li></ul> |
 | sendSticker | <ul><li>chatId: string</li><li>stickerId: string</li></ul> |
 | sendDice | <ul><li>chatId: string (get a random number from 1 to 6)</li></ul> |
 
