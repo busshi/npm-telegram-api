@@ -14,9 +14,7 @@ or
 
 | Method | Parameters |
 | :-- | :-- |
-| sendMessage | - chatId: string, 
-- message: string,
-- disableNotification: boolean (default: false) |
+| sendMessage | <ul><li>chatId: string</li><li>message: string</li><li>disableNotification: boolean (default: false)</li></ul> |
 | editMessage | chatId: string, messageId: string, text: string |
 | deleteMessage | chatId: string, messageId: string |
 | sendPhoto | chatId: string, picUrl: string, disableNotification: boolean (default: false) |
