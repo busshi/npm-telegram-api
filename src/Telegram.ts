@@ -9,16 +9,12 @@ class Telegram {
     this.apiUrl = `${this.telegramUrl}bot${token}`;
   }
 
-  sendMessage = (
-    chatId: string,
-    message: string,
-    disableNotification = false
-  ) => {
+  sendMessage = (chatId: string, text: string, disableNotification = false) => {
     return axios.post(
       `${this.apiUrl}/sendMessage`,
       {
         chat_id: chatId,
-        text: message,
+        text,
         disable_notification: disableNotification,
       },
       { headers: { 'Content-Type': 'application/json' } }

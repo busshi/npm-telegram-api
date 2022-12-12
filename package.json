@@ -1,6 +1,6 @@
 {
   "name": "@busshi/telegram-api",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Basic Telegram API to interact with your bot",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
